@@ -231,7 +231,7 @@ The successful implementation of predictive maintenance and effective detection 
 
 ## Link to notebook
 
-https://github.com/priyatamv/Module-17-App-2/blob/main/application-3.ipynb.ipynb
+https://github.com/priyatamv/capstone/blob/main/log_anlysis.ipynb
 
 ## Authors
 
