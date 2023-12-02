@@ -10,6 +10,23 @@ This is an exercise for trying to gain insights from the web server logs.
 
 The objective is to predict anomalies and security threats from web server log data while also incorporating predictive maintenance measures.
 
+<b>Predictive Maintenance:</b>
+
+Use Case: Predicting system failures or issues before they occur.
+
+Implementation: Train a predictive model on historical log data leading to system failures. Use the model to predict potential issues based on current log patterns.
+
+<b> Anomaly Detection:</b>
+
+Use Case: Detecting unusual or suspicious activities in the logs.
+
+Implementation: Train an anomaly detection model on normal log patterns. During operation, identify deviations from the learned patterns as anomalies.
+
+<b>Security Threat Detection:</b>
+
+Use Case: Identifying potential security threats and attacks in the log data.
+
+Implementation: Train a classification model to distinguish between normal and malicious activities. Use labeled data to train the model on known attack patterns.
 
 ## Dependencies
 
@@ -143,6 +160,10 @@ The objective is to predict anomalies and security threats from web server log d
 
 ![image info](images/predictive.png)
 
+Check for Overfitting with Learning Curve
+
+![image info](images/cpreport.jpeg)
+
 <b>Summary:</b> In the web server log predictive maintenance, the RandomForestClassifier achieved optimal performance with an accuracy of 100%, accurately identifying instances of increased errors. The chosen hyperparameters and imputation strategy further enhanced the precision and recall, ensuring reliable detection of potential anomalies in the log data.
 
 ### UseCase2: Anomaly Detection
@@ -160,7 +181,9 @@ The objective is to predict anomalies and security threats from web server log d
 
 <b>Results:</b>
 
-Anomalies: 691 entries
+Anomalies: 239 entries </br>
+Cross-Validation Average Precision Score: 1.00</br>
+ROC AUC Score: 0.50</br>
 
   ![image info](images/anomaly.png) 
 
@@ -181,6 +204,12 @@ Anomalies: 691 entries
 <b>Results</b>
 
 ![image info](images/st.png)
+
+Cross-Validation Accuracy Scores: [1.         1.         0.99974293 1.         1.        ]
+
+Check for Overfitting with Learning Curve
+
+![image info](images/sttl.jpeg)
 
 <b>Summary:</b> In the web server log security threat detection, the model achieved perfect accuracy (1.0) on a test set with 4863 entries. It correctly identified normal requests (class 0) and suspicious requests (class 1), demonstrating robust classification performance.
 
