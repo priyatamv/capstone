@@ -260,7 +260,7 @@ The successful implementation of predictive maintenance and effective detection 
 
 ## Link to notebook
 
-https://github.com/priyatamv/capstone/blob/main/log_anlysis.ipynb
+<a href='https://github.com/priyatamv/capstone/blob/main/log_analysis.ipynb'> Log Analysis </a>
 
 ## Authors
 
